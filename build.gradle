@@ -1,0 +1,127 @@
+/*
+ * This file is part of the Java library imagecompare.
+ *
+ * Copyright © 2013, Kay Abendroth or third-party contributors as
+ * indicated by the @author tags or express copyright attribution
+ * statements applied by the authors.
+ *
+ * imagecompare is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published
+ * by the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * imagecompare is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with imagecompare. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply from: "./libraries.gradle"
+
+apply plugin: 'checkstyle'
+apply plugin: 'findbugs'
+apply plugin: 'jacoco'
+apply plugin: 'build-dashboard'
+apply plugin: 'project-report'
+
+apply plugin: 'distribution'
+
+ext.imagecompareTargetVersion = '1.0.0-SNAPSHOT'
+ext.javaLanguageLevel = '1.6'
+
+// Set the group.
+group = 'com.github.kayabendroth.imagecompare'
+
+// Compiler options.
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+// Set the version for Gradle and our package.
+gradle.taskGraph.whenReady {taskGraph ->
+    if (taskGraph.hasTask(release)) {
+        // The OSGi manifest exported package versions need to be only the numerical release -- no "SNAPSHOT" or "Final".
+        final String cleanVersion = rootProject.imagecompareTargetVersion.replaceAll("-SNAPSHOT", "").replaceAll(".Final", "");
+        project.version = cleanVersion;
+    } else {
+        project.version = rootProject.imagecompareTargetVersion
+    }
+    ext.exportPackageVersion = project.version
+}
+
+configurations {
+    provided {
+        description = 'Non-exported compile-time dependencies.'
+    }
+    animalSniffer
+    javaApiSignature
+}
+
+repositories { mavenCentral() }
+
+dependencies {
+    compile ( libraries.guice )
+    compile ( libraries.imgscalr )
+
+    testCompile( libraries.junit )
+
+    animalSniffer ( libraries.animal_sniffer )
+    javaApiSignature ( libraries.java16_signature )
+}
+
+targetCompatibility = rootProject.javaLanguageLevel
+sourceCompatibility = rootProject.javaLanguageLevel
+
+// TODO: Add osgiManifest to task jar.
+
+test {
+    maxHeapSize = '1024m'
+    // Not strictly needed but useful to attach a profiler:
+    jvmArgs '-XX:MaxPermSize=256m'
+}
+
+task copyJavaApiSignature(type: Copy) {
+    from configurations.javaApiSignature
+    into "$buildDir/javaApiSignature/"
+    rename '.*signature', 'javaApi.signature'
+}
+
+// Checks that only types of the target Java version are used.
+task checkJavaApiSignature << {
+    ant.taskdef(name: 'animalSniffer', classname: 'org.codehaus.mojo.animal_sniffer.ant.CheckSignatureTask', classpath: configurations.animalSniffer.asPath)
+    ant.animalSniffer(signature: "$buildDir/javaApiSignature/javaApi.signature", classpath: configurations.compile.asPath + System.properties.'path.separator' + configurations.provided.asPath) {
+        path(path: "$buildDir/classes/main")
+    }
+}
+checkJavaApiSignature.dependsOn compileJava
+checkJavaApiSignature.dependsOn copyJavaApiSignature
+check.dependsOn checkJavaApiSignature
+
+checkstyleTest {
+    source = sourceSets.main.allJava.matching{
+        exclude '**/*'
+    }
+}
+
+// Enable HTML output of FindBugs for now.
+tasks.withType(FindBugs) {
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}
+
+// We want the coverage report from JaCoCo with every call to build.
+build.dependsOn jacocoTestReport
+
+// TODO: Add task for publishing.
+
+task dist << {}
+distTar.dependsOn build
+dist.dependsOn distTar
+
+task release << {}
+release.dependsOn dist

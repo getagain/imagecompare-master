@@ -1,0 +1,97 @@
+Element_name,Large,Medium_landscape,Medium_portrait,Small
+home_dropdown,//button[@type='button'],//button[@type='button'],//button[@type='button'],//button[@type='button']
+dl_link,//section[@id='row2']/div/h3,//section[@id='row2']/div/h3,//section[@id='row2']/div/h3,//section[@id='row2']/div/h3
+mag_link,//section[@id='row2']/div[2]/h3,//section[@id='row2']/div[2]/h3,//section[@id='row2']/div[2]/h3,//section[@id='row2']/div[2]/h3
+mag_image,//section[@id='row2']/div[2]/div/img,//section[@id='row2']/div[2]/div/img,//section[@id='row2']/div[2]/div/img,//section[@id='row2']/div[2]/div/img
+student_tools,//div[@class='student-tools-container container-height'],//div[@class='student-tools-container container-height'],//div[@class='student-tools-container container-height'],//div[@class='student-tools-container container-height']
+search_button,(//button[@type='button'])[2],(//button[@type='button'])[2],(//button[@type='button'])[2],//button[@type='button']
+help_button,//div[@class='content-container']/div[3],//div[@class='content-container']/div[3],//div[@class='content-container']/div[3],//li[@class='menu-buttons']/div
+profile_button,(//button[@type='button'])[3],(//button[@type='button'])[3],(//button[@type='button'])[3],//button[@type='button']
+sign_out,button.logout-ctrl,button.logout-ctrl,button.logout-ctrl,div.icon.logout-ctrl
+profile_student_info,//ul[@class='dropdown-menu list-group']/li[2]/div[3],//ul[@class='dropdown-menu list-group']/li[2]/div[3],//ul[@class='dropdown-menu list-group']/li[2]/div[3],//ul[@class='menu-body']/li[10]/div[3]
+profile_class,//ul[@class='dropdown-menu list-group']/li[3]/div[3],//ul[@class='dropdown-menu list-group']/li[3]/div[3],//ul[@class='dropdown-menu list-group']/li[3]/div[3],//ul[@class='menu-body']/li[11]/div[3]
+dl_carousal,//section[@id='row2']/div,//section[@id='row2']/div,//section[@id='row2']/div,//section[@id='row2']/div
+eEdition_label,//div[@class='unit-chooser']/div/div/h3,//div[@class='unit-chooser']/div/div/h3,//div[@class='unit-chooser']/div/div/h3,//div[@class='unit-chooser']/div/div/h3
+home,//li/a/,//li/a/,//li/a/,//li[2]/a/
+student_eEdition_dropdown,//li[2]/a/,//li[2]/a/,//li[2]/a/,//li[3]/a/
+mag_dropdown,//li[3]/a/,//li[3]/a/,//li[3]/a/,//li[4]/a/
+dl_dropdown,//li[4]/a/,//li[4]/a/,//li[4]/a/,//li[5]/a/
+connect_ng_dropdown,//li[5]/a/,//li[5]/a/,//li[5]/a/,//li[6]/a/
+myassign_dropdown,//li[6]/a/,//li[6]/a/,//li[6]/a/,//li[7]/a/
+gsearch_dropdown,//li[7]/a/,//li[7]/a/,//li[7]/a/,//li[8]/a/
+srd_dropdown,//li[8]/a/,//li[8]/a/,//li[8]/a/,//li[9]/a/
+rd_header,//div[@class='resource-directory']/header/div/div/h1,//div[@class='resource-directory']/header/div/div/h1,//div[@class='resource-directory']/header/div/div/h1,NULL
+dl_header,//div[@class='row-fluid digitalLibrary']/div[4]/header,//div[@class='row-fluid digitalLibrary']/div[4]/header,//div[@class='row-fluid digitalLibrary']/div[4]/header,//div[@class='row-fluid digitalLibrary']/header
+connect_to_ng_header,//div[@class='connect-to-ng']/header/h1,//div[@class='connect-to-ng']/header/h1,//div[@class='connect-to-ng']/header/h1,//div[@class='connect-to-ng']/header/h1
+srd_icon,div.nav-icon.student-resources,div.nav-icon.student-resources,div.nav-icon.student-resources,div.nav-icon.student-resources
+search_placeholder,search-myNGconnect,search-myNGconnect,search-myNGconnect,search-myNGconnect
+profile_close,i.remove-icon.custom-tooltip,i.remove-icon.custom-tooltip,i.remove-icon.custom-tooltip,i.remove-icon.custom-tooltip
+terms_link,Terms of Use & Privacy Policy,Terms of Use & Privacy Policy,Terms of Use & Privacy Policy,Terms of Use & Privacy Policy
+imt_icon,div.nav-icon.maps-graphs,div.nav-icon.maps-graphs,div.nav-icon.maps-graphs,div.nav-icon.maps-graphs
+connect_ng_icon,div.nav-icon.connect-to-ng-comp,div.nav-icon.connect-to-ng-comp,div.nav-icon.connect-to-ng-comp,div.nav-icon.connect-to-ng-comp
+myassignment_icon,div.nav-icon.my-assignments,div.nav-icon.my-assignments,div.nav-icon.my-assignments,div.nav-icon.my-assignments
+home_li,//li[1],//li[1],//li[1],//li[2]
+dropdown_list_container,//body/header/div/div[2]/div/div/ul,//body/header/div/div[2]/div/div/ul,//body/header/div/div[2]/div/div/ul,//li[@class='menu-body-wrapper']//ul[@class='menu-body']
+srd_page_header,//html//body/div/div/div/div[3]/div/header/div/div/h1,//html//body/div/div/div/div[3]/div/header/div/div/h1,//html//body/div/div/div/div[3]/div/header/div/div/h1,//body/div/div/div/div[3]/div/header/div/div/h1
+srd_li,//li[8],//li[8],//li[8],//li[9]
+srd_i_icon,//body//div//div//div//div[3]//div//header//div//div//div//a,//body//div//div//div//div[3]//div//header//div//div//div//a,//body//div//div//div//div[3]//div//header//div//div//div//a,//body//div//div//div//div[3]//div//header//div//div//div//a
+srd_i_icon_highlighted,NULL,NULL,NULL,//div[@class='resource-directory']//div[@class='information-icon open']/a
+srd_unit4,//body//div//div//div//div[3]//div//div//section//div//ol//li[4]//div,//body//div//div//div//div[3]//div//div//section//div//ol//li[4]//div,//body//div//div//div//div[3]//div//div//section//div//ol//li[4]//div,//body//div//div//div//div[3]//div//div//section//div//ol//li[4]//div
+srd_unit1,//body//div//div//div//div[3]//div//div//section//div//ol//li[1]//div,//body//div//div//div//div[3]//div//div//section//div//ol//li[1]//div,//body//div//div//div//div[3]//div//div//section//div//ol//li[1]//div,//body//div//div//div//div[3]//div//div//section//div//ol//li[1]//div
+srd_chapter1,//body/div/div/div/div[3]/div/div/section/div/ol/li/ol/li/div,//body/div/div/div/div[3]/div/div/section/div/ol/li/ol/li/div,//body/div/div/div/div[3]/div/div/section/div/ol/li/ol/li/div,//body/div/div/div/div[3]/div/div/section/div/ol/li/div
+srd_ch1_guided_writing,//body/div/div/div/div[3]/div/div/section/div/ol/li/ol/li/ol/li/div,//body/div/div/div/div[3]/div/div/section/div/ol/li/ol/li/ol/li/div,//body/div/div/div/div[3]/div/div/section/div/ol/li/ol/li/ol/li/div,//body/div/div/div/div[3]/div/div/section/div/ol/li/div
+srd_abt_student_res,//body//div//div//div//div[3]//div//div//section[2]//div//h3,//body//div//div//div//div[3]//div//div//section[2]//div//h3,//body//div//div//div//div[3]//div//div//section[2]//div//h3,//body/div/div/div/div[3]/div/header/div/div/div/div/div[2]/h3
+srd_root,//div[@class='resource-directory']//div[@class='resource-tree']/ol/li,//div[@class='resource-directory']//div[@class='resource-tree']/ol/li,//div[@class='resource-directory']//div[@class='resource-tree']/ol/li,//div[@class='resource-directory']//div[@class='resource-tree']/ol/li
+srd_brcm_size,//body/div/div/div/div[3]/div/header/div[2]/div[2]/ul/li,//body/div/div/div/div[3]/div/header/div[2]/div[2]/ul/li,//body/div/div/div/div[3]/div/header/div[2]/div[2]/ul/li,//body/div/div/div/div[3]/div/header/div[2]/div[2]/ul/li
+srd_resource_viewer,//div[@class='fancybox-overlay fancybox-overlay-fixed'],//div[@class='fancybox-overlay fancybox-overlay-fixed'],//div[@class='fancybox-overlay fancybox-overlay-fixed'],//div[@class='fancybox-overlay fancybox-overlay-fixed']
+srd_list_view,//div[@id='dashboardViewStack']/div[3]/div/header/div[3],//div[@id='dashboardViewStack']/div[3]/div/header/div[3],//div[@id='dashboardViewStack']/div[3]/div/header/div[3],//div[@id='dashboardViewStack']/div[3]/div/header/div[3]
+srd_grid_view,//div[@id='dashboardViewStack']/div[3]/div/header/div[4],//div[@id='dashboardViewStack']/div[3]/div/header/div[4],//div[@id='dashboardViewStack']/div[3]/div/header/div[4],//div[@id='dashboardViewStack']/div[3]/div/header/div[4]
+srd_list_enabled,//div[@id='dashboardViewStack']/div[3]/div/header//div[@class='layout-btn list-view resource-directory-sprite enabled layout-active'],//div[@id='dashboardViewStack']/div[3]/div/header//div[@class='layout-btn list-view resource-directory-sprite enabled layout-active'],//div[@id='dashboardViewStack']/div[3]/div/header//div[@class='layout-btn list-view resource-directory-sprite enabled layout-active'],//div[@id='dashboardViewStack']/div[3]/div/header//div[@class='layout-btn list-view resource-directory-sprite enabled layout-active']
+srd_grid_enabled,NULL,NULL,NULL,NULL
+srd_breadcrum,//div[@class='bread-crumb']/ul[@class='breadcrumb']/span[@class='ellip'],//div[@class='bread-crumb']/ul[@class='breadcrumb']/span[@class='ellip'],//div[@class='bread-crumb']/ul[@class='breadcrumb']/span[@class='ellip'],//div[2][@class='bread-crumb']/ul[@class='breadcrumb']
+srd_resource_container,//body//div//div//div//div[3]//div//div//section[2]//div[2]//div,//body//div//div//div//div[3]//div//div//section[2]//div[2]//div,//body//div//div//div//div[3]//div//div//section[2]//div[2]//div,//body//div//div//div//div[3]//div//div//section[2]//div[2]//div
+srd_resource_tree_container,//body/div/div/div/div[3]/div/div/section/div,//body/div/div/div/div[3]/div/div/section/div,//body/div/div/div/div[3]/div/div/section/div,//body/div/div/div/div[3]/div/div/section/div
+srd_topband_container,//body//header[@class='row-fluid container-padding']//div[@class='ecosystem-header app-shadow'],//body//header[@class='row-fluid container-padding']//div[@class='ecosystem-header app-shadow'],//body//header[@class='row-fluid container-padding']//div[@class='ecosystem-header app-shadow'],//body//header[@class='row-fluid container-padding']//div[@class='ecosystem-header app-shadow']
+srd_container,//div[@class='resource-directory'],//div[@class='resource-directory'],//div[@class='resource-directory'],//div[@class='resource-directory']//div[@class='resource-tree']
+srd_header_container,//div[@class='resource-directory']/header,//div[@class='resource-directory']/header,//div[@class='resource-directory']/header,//div[@class='resource-directory']/header
+srd_instructions_container,//div[@class='resource-directory']//div[@class='instructions-container'],//div[@class='resource-directory']//div[@class='instructions-container'],//div[@class='resource-directory']//div[@class='instructions-container'],//div[@class='dropdown-menu instruction-text-container']//div[2]
+srd_tree_container,//div[@class='resource-directory']//div[@class='resource-tree'],//div[@class='resource-directory']//div[@class='resource-tree'],//div[@class='resource-directory']//div[@class='resource-tree'],//div[@class='resource-directory']//div[@class='resource-tree']
+srd_footer,//div[@id='ecosystem-footer'],//div[@id='ecosystem-footer'],//div[@id='ecosystem-footer'],//div[@id='ecosystem-footer']
+srd_information_icon,NULL,NULL,NULL,//div[@class='resource-directory']//div[@class='information-icon']/a
+srd_resourceId,8aa85eb0-42bbf85a-0142-bc1957db-0355,8aa85eb0-42bbf85a-0142-bc1957db-0355,8aa85eb0-42bbf85a-0142-bc1957db-0355,8aa85eb0-42bbf85a-0142-bc1957db-0355
+srd_information_popup_close,NULL,NULL,NULL,//div[@class='resource-directory']//div[@class='information-icon open']//div[@class='close-btn resource-directory-sprite']
+srd_back_btn,NULL,NULL,NULL,//div/header/div[2]/div[@class='breadcrumb-back-btn']
+mag_li,//li[3],//li[3],//li[3],//li[4]
+mag_home_text,//div[@class='maps-and-graphs span4 container-shadow mouse-cursor-pointer']//h3,//div[@class='maps-and-graphs span4 container-shadow mouse-cursor-pointer']//h3,//div[@class='maps-and-graphs span4 container-shadow mouse-cursor-pointer']//h3,NULL
+mag_home_div,//div[@class='maps-and-graphs span4 container-shadow mouse-cursor-pointer']//div[@class='image-container container-height'],//div[@class='maps-and-graphs span4 container-shadow mouse-cursor-pointer']//div[@class='image-container container-height'],//div[@class='maps-and-graphs span4 container-shadow mouse-cursor-pointer']//div[@class='image-container container-height'],NULL
+mag_information_icon,NULL,NULL,NULL,//div[@class='resource-directory']//div[@class='information-icon']/a
+mag_page_header,//html//body/div/div/div/div[3]/div/header/div/div/h1,//html//body/div/div/div/div[3]/div/header/div/div/h1,//html//body/div/div/div/div[3]/div/header/div/div/h1,//html//body/div/div/div/div[3]/div/header/div/div/h1
+mag_topband_container,//body//header[@class='row-fluid container-padding']//div[@class='ecosystem-header app-shadow'],//body//header[@class='row-fluid container-padding']//div[@class='ecosystem-header app-shadow'],//body//header[@class='row-fluid container-padding']//div[@class='ecosystem-header app-shadow'],//body//header[@class='row-fluid container-padding']//div[@class='ecosystem-header app-shadow']
+mag_container,//div[@class='resource-directory'],//div[@class='resource-directory'],//div[@class='resource-directory'],//div[@class='resource-directory']//div[@class='resource-tree']
+mag_header_container,//div[@class='resource-directory']/header,//div[@class='resource-directory']/header,//div[@class='resource-directory']/header,//div[@class='resource-directory']/header
+mag_instructions_container,//div[@class='resource-directory']//div[@class='instructions-container'],//div[@class='resource-directory']//div[@class='instructions-container'],//div[@class='resource-directory']//div[@class='instructions-container'],//div[@class='dropdown-menu instruction-text-container']//div[2]
+mag_tree_container,//div[@class='resource-directory']//div[@class='resource-tree'],//div[@class='resource-directory']//div[@class='resource-tree'],//div[@class='resource-directory']//div[@class='resource-tree'],//div[@class='resource-directory']//div[@class='resource-tree']
+mag_footer,//div[@id='ecosystem-footer'],//div[@id='ecosystem-footer'],//div[@id='ecosystem-footer'],//div[@id='ecosystem-footer']
+mag_i_icon,//body//div//div//div//div[3]//div//header//div//div//div//a,//body//div//div//div//div[3]//div//header//div//div//div//a,//body//div//div//div//div[3]//div//header//div//div//div//a,//body//div//div//div//div[3]//div//header//div//div//div//a
+mag_i_icon_highlighted,NULL,NULL,NULL,//div[@class='resource-directory']//div[@class='information-icon open']/a
+mag_unit4,NULL,NULL,NULL,NULL
+mag_unit1,NULL,NULL,NULL,NULL
+mag_chapter1,NULL,NULL,NULL,NULL
+mag_ch1_guided_writing,NULL,NULL,NULL,NULL
+mag_abt_mag,//body//div//div//div//div[3]//div//div//section[2]//div//h3,//body//div//div//div//div[3]//div//div//section[2]//div//h3,//body//div//div//div//div[3]//div//div//section[2]//div//h3,//body/div/div/div/div[3]/div/header/div/div/div/div/div[2]/h3
+mag_root,//div[@class='resource-directory']//div[@class='resource-tree']/ol/li,//div[@class='resource-directory']//div[@class='resource-tree']/ol/li,//div[@class='resource-directory']//div[@class='resource-tree']/ol/li,//div[@class='resource-directory']//div[@class='resource-tree']/ol/li
+mag_brcm_size,NULL,NULL,NULL,NULL
+mag_resource_viewer,//div[@class='fancybox-overlay fancybox-overlay-fixed'],//div[@class='fancybox-overlay fancybox-overlay-fixed'],//div[@class='fancybox-overlay fancybox-overlay-fixed'],//div[@class='fancybox-overlay fancybox-overlay-fixed']
+mag_list_view,//div[@id='dashboardViewStack']/div[3]/div/header/div[3],//div[@id='dashboardViewStack']/div[3]/div/header/div[3],//div[@id='dashboardViewStack']/div[3]/div/header/div[3],//div[@id='dashboardViewStack']/div[3]/div/header/div[3]
+mag_grid_view,//div[@id='dashboardViewStack']/div[3]/div/header/div[4],//div[@id='dashboardViewStack']/div[3]/div/header/div[4],//div[@id='dashboardViewStack']/div[3]/div/header/div[4],//div[@id='dashboardViewStack']/div[3]/div/header/div[4]
+mag_list_enabled,//div[@id='dashboardViewStack']/div[3]/div/header//div[@class='layout-btn list-view resource-directory-sprite enabled layout-active'],//div[@id='dashboardViewStack']/div[3]/div/header//div[@class='layout-btn list-view resource-directory-sprite enabled layout-active'],//div[@id='dashboardViewStack']/div[3]/div/header//div[@class='layout-btn list-view resource-directory-sprite enabled layout-active'],//div[@id='dashboardViewStack']/div[3]/div/header//div[@class='layout-btn list-view resource-directory-sprite enabled layout-active']
+mag_grid_enabled,NULL,NULL,NULL,NULL
+mag_breadcrum,//div[@class='bread-crumb']/ul[@class='breadcrumb']/span[@class='ellip'],//div[@class='bread-crumb']/ul[@class='breadcrumb']/span[@class='ellip'],//div[@class='bread-crumb']/ul[@class='breadcrumb']/span[@class='ellip'],//div[2][@class='bread-crumb']/ul[@class='breadcrumb']
+mag_resource_container,//body//div//div//div//div[3]//div//div//section[2]//div[2]//div,//body//div//div//div//div[3]//div//div//section[2]//div[2]//div,//body//div//div//div//div[3]//div//div//section[2]//div[2]//div,//body//div//div//div//div[3]//div//div//section[2]//div[2]//div
+mag_resource_tree_container,//body/div/div/div/div[3]/div/div/section/div,//body/div/div/div/div[3]/div/div/section/div,//body/div/div/div/div[3]/div/div/section/div,//body/div/div/div/div[3]/div/div/section/div
+mag_resourceId,NULL,NULL,NULL,NULL
+mag_information_popup_close,NULL,NULL,NULL,//div[@class='resource-directory']//div[@class='information-icon open']//div[@class='close-btn resource-directory-sprite']
+mag_back_btn,NULL,NULL,NULL,//div/header/div[2]/div[@class='breadcrumb-back-btn']
+srd_resource_grid,//div[@class='resource-directory']//div[@class='grid-list']//ul[@class='grid items']/li,//div[@class='resource-directory']//div[@class='grid-list']//ul/li,//div[@class='resource-directory']//div[@class='grid-list']//ul/li,//div[@class='resource-directory']//div[@class='grid-list']//ul/li
+srd_viewer_close,//div[@class='resource-viewer']//div[@class='cust-close'],NULL,NULL,NULL
+srd_viewer_title,//div[@class='resource-viewer']//div[@class='label-container']//h5,NULL,NULL,NULL
